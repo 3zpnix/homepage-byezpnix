@@ -5,20 +5,34 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
             background-color: black; /* Set background color to black */
+            color: white;
         }
         img {
             max-width: 50%;
             max-height: 50%;
             object-fit: contain;
         }
+        .search-bar {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #4285F4;
+            border-radius: 20px; /* Rounded edges */
+            width: 300px;
+            background-color: #000000; /* Set background color to black */
+            color: white; /* Set text color to white */
+        }
     </style>
 </head>
 <body>
     <img src="images/eye.gif" alt="Example GIF">
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="search" name="q" placeholder="Search Google" class="search-bar">
+    </form>
 </body>
 </html>
