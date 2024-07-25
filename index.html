@@ -27,6 +27,23 @@
             background-color: #000000; /* Set background color to black */
             color: white; /* Set text color to white */
         }
+        .moving-text {
+            animation: moveText 5s linear infinite;
+            opacity: 0; /* Start with 0 opacity for fading in */
+        }
+        @keyframes moveText {
+            0% { 
+                transform: translateX(100%);
+                opacity: 0; /* Fade in as it enters from the right */
+            }
+            50% {
+                opacity: 1; /* Fully visible in the middle */
+            }
+            100% { 
+                transform: translateX(-100%);
+                opacity: 0; /* Fade out as it exits to the left */
+            }
+        }
     </style>
 </head>
 <body>
@@ -34,5 +51,6 @@
     <form action="https://www.google.com/search" method="get" target="_blank">
         <input type="search" name="q" placeholder="Search Google" class="search-bar">
     </form>
+    <div class="moving-text">You are currently being watched</div>
 </body>
 </html>
