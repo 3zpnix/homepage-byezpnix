@@ -1,1 +1,1 @@
-# ezpnix-homepage.com
+# personal-homepage.com
